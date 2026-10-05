@@ -7,10 +7,18 @@ h1 {
     font-family: 'Rye';
 }
 
+h2 {
+    color: #C84B31;
+    font-size: 18px;
+    font-family: 'Rye';
+    max-width: 700px; margin: 1em auto; text-align: center;
+}
+
 p {
     color: #206DB6;
     font-size: 18px;
     font-family: 'Bitter', serif;
+    max-width: 700px; margin: 0 auto; text-align: center;
 }
 
 blockquote {
