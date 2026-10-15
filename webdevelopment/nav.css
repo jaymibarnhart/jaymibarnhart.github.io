@@ -1,0 +1,49 @@
+body{
+    margin: 0px;
+}
+
+main{
+    margin: 20px;
+}
+
+.site-logo {
+    width: 300px;       
+    height: auto;       
+    display: block;
+}
+
+h1{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: #C84B31;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar a:hover{
+    background-color: #206DB6;
+}
+.navbar li{
+    float: left;
+}
