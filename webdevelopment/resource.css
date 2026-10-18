@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Rye&display=swap');
+
+body{
+    margin: 0px;
+}
+
+main{
+    margin: 20px;
+}
+
+.site-logo {
+    width: 200px;       
+    height: auto;       
+    display: block;
+}
+
+h1{
+    text-align: center;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: #C84B31;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Bitter', serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar a:hover{
+    background-color: #206DB6;
+}
+.navbar li{
+    float: left;
+}
+
+ li{
+    text-align: left;
+    line-height: 1.6;
+}
+
+:not(:first-of-type) {
+    text-indent: 2em; 
+    margin-top: 0.5em;
+}
+
+ul li a {
+    display: block;       
+    margin-top: 4px;      
+    color: #206DB6;
+    text-decoration: underline;
+    word-break: break-all; 
+}
+
+ul li a:hover {
+    color: #C84B31;
+}
+
+.resources-container {
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #206DB6;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.resources-container h3 {
+    margin-top: 0;
+    color: #C84B31;
+    text-align: center;
+}
+
+.resources-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.resources-container li {
+    margin-bottom: 16px;
+    color: #206DB6;
+    font-family: 'Bitter', serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Link indented below the citation title */
+.resources-container a {
+    display: block;             /* Drops link to its own line */
+    margin-left: 24px;          /* Indents link underneath citation text */
+    margin-top: 4px;            /* Adds small space above the link */
+    color: #206DB6;
+    text-decoration: underline;
+    word-break: break-all;      /* Prevents long URLs from overflowing */
+    transition: color 0.2s ease;
+}
+
+.resources-container a:hover {
+    color: #C84B31;
+}
+
+h1 {
+    color: #C84B31;
+    font-size: 36px;
+    font-family: 'Rye';
+}
+
+h3 {
+    color: #C84B31;
+    font-size: 18px;
+    font-family: 'Bitter', serif;
+    max-width: 700px; margin: 1em auto; text-align: center;
+}
+
+h3 {
+    color: #C84B31;               /* Your terracotta red palette color */
+    font-size: 24px;
+    font-family: 'Bitter', serif;
+    text-align: center;
+}
+
+/* Easiest way: Target strictly the first letter 'R' */
+h3::first-letter {
+    color: #206DB6;               /* Changes the 'R' to your blue palette color */
+    font-family: 'Bitter', cursive;  /* Applies your display font just to the 'R' */
+    font-size: 1.3em;             /* Optional: makes the 'R' slightly larger */
+}
