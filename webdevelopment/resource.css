@@ -55,7 +55,7 @@ h1{
     text-align: left;
     line-height: 1.6;
 }
-
+/* indentions of lines here*/
 :not(:first-of-type) {
     text-indent: 2em; 
     margin-top: 0.5em;
@@ -114,7 +114,7 @@ ul li a:hover {
 .navbar li.dropdown:hover .dropdown-menu {
     display: block;
 }
-
+/* box model here*/
 .resources-container {
     max-width: 750px;
     margin: 40px auto;
@@ -180,7 +180,7 @@ h3 {
     text-align: center;
 }
 
-
+/* first letter edited here*/
 h3::first-letter {
     color: #206DB6;             
     font-family: 'Bitter', cursive;  
