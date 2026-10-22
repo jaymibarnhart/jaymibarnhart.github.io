@@ -130,7 +130,8 @@ footer {
 .resume-btn {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 15px;
+    margin-top: 40px;
+    margin-left: 180px;
     border: 2px solid #C84B31;
     border-radius: 6px;
     text-decoration: none;
@@ -150,10 +151,104 @@ ul {
     color:#206DB6;
 }
 
+.about-container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 24px;               
+    max-width: 800px;
+    margin: 20px auto;     
+    text-align: left;
+}
+
+/* Headshot styling */
+.headshot-img {
+    width: 150px;           
+    height: auto;            
+    border-radius: 8px;     
+    flex-shrink: 0;          
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    text-align: left;
+    margin-top: 0;          
+}
+
+.about-text p {
+    text-align: left;
+    margin: 0 0 1em 0;
+}
+
+@media (max-width: 650px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text h3,
+    .about-text p {
+        text-align: center;
+    }
+}
+
+.resume-video {
+    width: 150px;             
+    height: auto;             
+    border-radius: 8px;     
+    display: block;           
+    margin: 20px auto;        
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.education-container {
+    display: flex;
+    align-items: flex-start; 
+    gap: 24px;             
+    max-width: 800px;
+    margin: 30px auto;      
+    text-align: left;
+}
+
+.resume-video {
+    width: 150px;          
+    height: auto;           
+    border-radius: 8px;
+    flex-shrink: 0;          
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.education-text {
+    flex: 1;
+}
+
+.education-text h3 {
+    text-align: left;
+    margin-top: 0;         
+}
+
+.education-text ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+@media (max-width: 650px) {
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-text h3 {
+        text-align: center;
+    }
+}
+
 #hero {
     background: url('image2.webp') no-repeat center / cover;
     padding: 20px;
     text-align: center;
-    height: 90vh;
+    height: 115vh;
     color: #C84B31;
 }
