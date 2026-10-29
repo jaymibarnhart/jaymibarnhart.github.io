@@ -160,7 +160,6 @@ ul {
     text-align: left;
 }
 
-/* Headshot styling */
 .headshot-img {
     width: 150px;           
     height: auto;            
@@ -251,4 +250,41 @@ ul {
     text-align: center;
     height: 115vh;
     color: #C84B31;
+}
+
+@media print {
+  /* 1. Hide unwanted elements */
+  nav, 
+  .site-footer, 
+  .sidebar, 
+  .site-logo, 
+  .resume-video, 
+  .resume-btn,
+  .about-container img {
+    display: none !important;
+  }
+  .headshot-img {
+  display: none !important;
+  }
+
+  #hero {
+    background: none !important;
+    height: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  body, h1, h3, p, ul, li, footer {
+    font-family: 'Bitter', serif !important; 
+    color: #000000 !important;             
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  h1, h3, p, ul, footer {
+    color: #000000 !important;
+  }
 }
