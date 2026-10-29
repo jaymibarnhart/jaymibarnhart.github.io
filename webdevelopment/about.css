@@ -274,6 +274,10 @@ ul {
     margin: 0 !important;
   }
   
+  @page {
+        margin: 1in;
+    }
+
   body, h1, h3, p, ul, li, footer {
     font-family: 'Bitter', serif !important; 
     color: #000000 !important;             
