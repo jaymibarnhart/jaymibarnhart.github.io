@@ -124,3 +124,44 @@ blockquote {
     height: 50vh;
     color: #C84B31;
 }
+footer {
+    color: #206DB6;
+    font-size: 18px;
+    font-family: 'Bitter', serif;
+}
+
+.footer-icon-sm {
+    width: 20px;
+    height: 20px;
+}
+.footer-container {
+    position: relative;
+    overflow: hidden;         
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-bg-img {
+
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;     
+    z-index: 1 !important;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;              
+    color: #6b2121;         
+}
+
+.footer-content p {
+    color: #000000 !important;     
+    font-weight: bold !important;    
+    font-family: 'Bitter', serif;
+    font-size: 18px;
+    margin: 0;
+}
