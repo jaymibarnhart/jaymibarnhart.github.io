@@ -3,7 +3,7 @@
 
 <!--
 Name: Jaymi Barnhart
-Date: October 18th, 2026
+Date: October 31st, 2026
 Course: ISLT 7355 
 Description: Contact Me
 -->
@@ -12,7 +12,8 @@ Description: Contact Me
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" type="images/icon.png" href="icons8-maracas-48.png" alt="Maracas Icon by Icons8">
 </head>
 
 <body>
@@ -41,14 +42,65 @@ Description: Contact Me
         <h1>Contact Me</h1>
     </header>
 
-    <p> site not complete yet!</p>
+    <form action="mailinglist.php" method="POST" class="contact-form">
+    <fieldset>
+        <legend>Contact Me</legend>
+        <p class="form-intro">Have any questions? Fill out this form below!</p>
 
+        <div class="form-group inline-group">
+            <label for="title-input">Title:</label>
+            <input type="text" list="title" name="title" id="title-input" placeholder="Select or type">
+            <datalist id="title">
+                <option value="Mr.">
+                <option value="Mrs.">
+                <option value="Ms.">
+                <option value="Dr.">
+            </datalist>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required placeholder="First Last">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="your.email@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="5" required placeholder="Your message here..."></textarea>
+        </div>
+
+        <div class="radio-section">
+            <p class="radio-title">Where are you from?</p>
+            <div class="radio-options">
+                <label><input type="radio" name="location" value="North America" checked> North America</label>
+                <label><input type="radio" name="location" value="South America"> South America</label>
+                <label><input type="radio" name="location" value="Europe"> Europe</label>
+                <label><input type="radio" name="location" value="Asia"> Asia</label>
+                <label><input type="radio" name="location" value="Africa"> Africa</label>
+                <label><input type="radio" name="location" value="Australia"> Australia</label>
+            </div>
+        </div>
+
+        <input type="submit" value="Submit" class="submit-btn">
+    </fieldset>
+</form>
      
     </main>
 
-    <footer>
-        <p>Jaymi Barnhart || October 18, 2026</p>
-    </footer>
+     <footer class="footer-container">
+    <img src="footer.png" alt="" class="footer-bg-img">
+    <div class="footer-content">
+        <p>
+            Jaymi Barnhart || 
+            <img src="phone.png" alt="Phone Icon" class="footer-icon-sm"> 555.555.5555 || 
+            <img src="email.png" alt="Email Icon" class="footer-icon-sm"> jbarnhart@gmail.com
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>
