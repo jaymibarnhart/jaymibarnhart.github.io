@@ -354,7 +354,6 @@ ul {
 }
 
 @media (max-width: 700px) {
-    /* Stack grid items single-column in vertical order */
     .grid-container {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -367,14 +366,13 @@ ul {
         padding: 0 15px;
     }
 
-    /* Reset absolute margins on the resume button so it centers */
     .resume-btn {
         margin: 20px auto 0 auto !important;
         display: block;
         width: max-content;
     }
 
-    /* Keep video cleanly within layout flow without overlap */
+  
     .grid-video {
         position: relative !important;
         width: 100%;
@@ -394,7 +392,7 @@ ul {
     }
 
     .grid-about p {
-        text-align: left; /* Keeps bio text readable */
+        text-align: left; 
     }
 }
 
