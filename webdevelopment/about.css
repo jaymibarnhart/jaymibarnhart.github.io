@@ -248,7 +248,7 @@ ul {
     background: url('image2.webp') no-repeat center / cover;
     padding: 20px;
     text-align: center;
-    height: 115vh;
+    height: auto !important; 
     color: #C84B31;
 }
 
