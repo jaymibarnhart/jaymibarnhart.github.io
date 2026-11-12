@@ -119,11 +119,30 @@ blockquote {
 
 #hero {
     background: url('image2.webp') no-repeat center / cover;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center;
-    height: 50vh;
+    min-height: 50vh;
+    height: auto;
     color: #C84B31;
 }
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #C84B31;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Rye', serif;
+    font-size: 18px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.hero-btn:hover {
+    background-color: #206DB6;
+}
+
 footer {
     color: #206DB6;
     font-size: 18px;
@@ -164,4 +183,46 @@ footer {
     font-family: 'Bitter', serif;
     font-size: 18px;
     margin: 0;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+/* Hide hamburger icon on desktop */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #C84B31;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    /* Show hamburger icon on mobile */
+    .hamburger {
+        display: block;
+    }
+
+    /* Hide menu links by default on mobile */
+    .navbar.mobile-menu ul {
+        display: none !important;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Reveal menu links when the hamburger label is tapped */
+    .menu-checkbox:checked ~ .navbar.mobile-menu ul {
+        display: flex !important;
+    }
+
+    .navbar.mobile-menu li {
+        width: 100%;
+    }
+
+    .navbar.mobile-menu a {
+        text-align: left;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
 }
