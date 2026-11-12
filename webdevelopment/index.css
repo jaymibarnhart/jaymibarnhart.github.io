@@ -189,7 +189,6 @@ footer {
     display: none;
 }
 
-/* Hide hamburger icon on desktop */
 .hamburger {
     display: none;
     font-size: 30px;
@@ -200,19 +199,16 @@ footer {
 }
 
 @media (max-width: 700px) {
-    /* Show hamburger icon on mobile */
     .hamburger {
         display: block;
     }
 
-    /* Hide menu links by default on mobile */
     .navbar.mobile-menu ul {
         display: none !important;
         flex-direction: column;
         width: 100%;
     }
 
-    /* Reveal menu links when the hamburger label is tapped */
     .menu-checkbox:checked ~ .navbar.mobile-menu ul {
         display: flex !important;
     }
