@@ -2,7 +2,7 @@
 <html lang="en">
 
 <!--Name: Jaymi Barnhart
-Date: October 31st, 2026
+Date: October 18th, 2026
 Course: ISLT 7355 
 Description: resources -->
 
@@ -11,24 +11,26 @@ Description: resources -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources</title>
     <link rel="stylesheet" href="resource.css">
-
+    <link rel="shortcut icon" type="images/icon.png" href="icons8-maracas-48.png" alt="Maracas Icon by Icons8">
 </head>
 
 <body>
     <header>
          <img src="logo.png" alt="Your Site Logo" class="site-logo">
+         <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
         
-    <nav class="navbar">
+    <nav class="navbar mobile-menu"> 
+
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-      <!-- 2-Tier Dropdown Item -->
         <li class="dropdown">
             <a href="content.html" class="dropbtn">Content &#9662;</a>
             <ul class="dropdown-menu">
                 <li><a href="content.html#geography">Geography</a></li>
                 <li><a href="content.html#culture">Culture & Food</a></li>
-                <li><a href="content.html#holidays">Holidays</a></li>
+                <li><a href="content.html#holidays">Traditions</a></li>
             </ul>
         </li>
       <li><a href="resources.html">Resources</a></li>
@@ -81,8 +83,16 @@ Description: resources -->
 
 </main>
 
-    <footer>
-        <p> Jaymi Barnhart || October 18, 2026</p>
-    </footer>
+    <footer class="footer-container">
+    <img src="footer.png" alt="" class="footer-bg-img">
+    <div class="footer-content">
+        <p>
+            Jaymi Barnhart || 
+            <img src="phone.png" alt="Phone Icon" class="footer-icon-sm"> 555.555.5555 || 
+            <img src="email.png" alt="Email Icon" class="footer-icon-sm"> jbarnhart@gmail.com
+        </p>
+    </div>
+</footer>
+
 </body>
 </html> 
