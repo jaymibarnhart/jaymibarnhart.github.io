@@ -20,11 +20,14 @@ Description: index/home
 <header>
      <img src="logo.png" alt="Your Site Logo" class="site-logo">
         
-    <nav class="navbar">
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+        
+    <nav class="navbar mobile-menu">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
-     <!-- 2-Tier Dropdown Item -->
+
         <li class="dropdown">
             <a href="content.html" class="dropbtn">Content &#9662;</a>
             <ul class="dropdown-menu">
@@ -96,9 +99,16 @@ Description: index/home
         </blockquote>
     </main>
 
-    <footer>
-        <p>Jaymi Barnhart || October 3, 2026</p>
-    </footer>
+     <footer class="footer-container">
+    <img src="footer.png" alt="" class="footer-bg-img">
+    <div class="footer-content">
+        <p>
+            Jaymi Barnhart || 
+            <img src="phone.png" alt="Phone Icon" class="footer-icon-sm"> 555.555.5555 || 
+            <img src="email.png" alt="Email Icon" class="footer-icon-sm"> jbarnhart@gmail.com
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>
