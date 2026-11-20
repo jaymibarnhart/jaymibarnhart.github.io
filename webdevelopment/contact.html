@@ -3,9 +3,9 @@
 
 <!--
 Name: Jaymi Barnhart
-Date: October 31st, 2026
+Date: October 18th, 2026
 Course: ISLT 7355 
-Description: Contact Me
+Description: Content
 -->
 
 <head>
@@ -13,94 +13,93 @@ Description: Contact Me
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="contact.css">
-    <link rel="shortcut icon" type="images/icon.png" href="icons8-maracas-48.png" alt="Maracas Icon by Icons8">
+    <link rel="icon" type="image/png" href="icons8-maracas-48.png">
 </head>
 
 <body>
-<header>
-     <img src="logo.png" alt="Your Site Logo" class="site-logo">
-        
-    <nav class="navbar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-     <!-- 2-Tier Dropdown Item -->
-        <li class="dropdown">
-            <a href="content.html" class="dropbtn">Content &#9662;</a>
-            <ul class="dropdown-menu">
-                <li><a href="content.html#geography">Geography</a></li>
-                <li><a href="content.html#culture">Culture & Food</a></li>
-                <li><a href="content.html#holidays">Holidays</a></li>
-            </ul>
-        </li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="contact.html">Contact Me</a></li>
-
-</ul>
-  </nav>
     <header>
+        <img src="logo.png" alt="Your Site Logo" class="site-logo">
+            
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+            
+        <nav class="navbar mobile-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="content.html" class="dropbtn">Content &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="content.html#geography">Geography</a></li>
+                        <li><a href="content.html#culture">Culture & Food</a></li>
+                        <li><a href="content.html#holidays">Holidays</a></li>
+                    </ul>
+                </li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+
         <h1>Contact Me</h1>
     </header>
 
-    <form action="mailinglist.php" method="POST" class="contact-form">
-    <fieldset>
-        <legend>Contact Me</legend>
-        <p class="form-intro">Have any questions? Fill out this form below!</p>
+    <main>
+        <form action="mailinglist.php" method="POST" class="contact-form">
+            <fieldset>
+                <legend>Contact Me</legend>
+                <p class="form-intro">Have any questions? Fill out this form below!</p>
 
-        <div class="form-group inline-group">
-            <label for="title-input">Title:</label>
-            <input type="text" list="title" name="title" id="title-input" placeholder="Select or type">
-            <datalist id="title">
-                <option value="Mr.">
-                <option value="Mrs.">
-                <option value="Ms.">
-                <option value="Dr.">
-            </datalist>
-        </div>
+                <div class="form-group inline-group">
+                    <label for="title-input">Title:</label>
+                    <input type="text" list="title" name="title" id="title-input" placeholder="Select or type">
+                    <datalist id="title">
+                        <option value="Mr.">
+                        <option value="Mrs.">
+                        <option value="Ms.">
+                        <option value="Dr.">
+                    </datalist>
+                </div>
 
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required placeholder="First Last">
-        </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required placeholder="First Last">
+                </div>
 
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required placeholder="your.email@example.com">
-        </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required placeholder="your.email@example.com">
+                </div>
 
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea name="message" id="message" rows="5" required placeholder="Your message here..."></textarea>
-        </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="8" required placeholder="Your message here..."></textarea>
+                </div>
 
-        <div class="radio-section">
-            <p class="radio-title">Where are you from?</p>
-            <div class="radio-options">
-                <label><input type="radio" name="location" value="North America" checked> North America</label>
-                <label><input type="radio" name="location" value="South America"> South America</label>
-                <label><input type="radio" name="location" value="Europe"> Europe</label>
-                <label><input type="radio" name="location" value="Asia"> Asia</label>
-                <label><input type="radio" name="location" value="Africa"> Africa</label>
-                <label><input type="radio" name="location" value="Australia"> Australia</label>
-            </div>
-        </div>
+                <div class="radio-section">
+                    <p class="radio-title">Where are you from?</p>
+                    <div class="radio-options">
+                        <label><input type="radio" name="location" value="North America" checked> North America</label>
+                        <label><input type="radio" name="location" value="South America"> South America</label>
+                        <label><input type="radio" name="location" value="Europe"> Europe</label>
+                        <label><input type="radio" name="location" value="Asia"> Asia</label>
+                        <label><input type="radio" name="location" value="Africa"> Africa</label>
+                        <label><input type="radio" name="location" value="Australia"> Australia</label>
+                    </div>
+                </div>
 
-        <input type="submit" value="Submit" class="submit-btn">
-    </fieldset>
-</form>
-     
+                <input type="submit" value="Submit" class="submit-btn">
+            </fieldset>
+        </form>
     </main>
 
-     <footer class="footer-container">
-    <img src="footer.png" alt="" class="footer-bg-img">
-    <div class="footer-content">
-        <p>
-            Jaymi Barnhart || 
-            <img src="phone.png" alt="Phone Icon" class="footer-icon-sm"> 555.555.5555 || 
-            <img src="email.png" alt="Email Icon" class="footer-icon-sm"> jbarnhart@gmail.com
-        </p>
-    </div>
-</footer>
-
+    <footer class="footer-container">
+        <img src="footer.png" alt="" class="footer-bg-img">
+        <div class="footer-content">
+            <p>
+                Jaymi Barnhart || 
+                <img src="phone.png" alt="Phone Icon" class="footer-icon-sm"> 555.555.5555 || 
+                <img src="email.png" alt="Email Icon" class="footer-icon-sm"> jbarnhart@gmail.com
+            </p>
+        </div>
+    </footer>
 </body>
-</html>
